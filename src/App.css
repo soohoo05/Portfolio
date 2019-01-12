@@ -1,32 +1,247 @@
-.App {
-  text-align: center;
+::selection{
+    background-color:none;
+     color:inherit;
+}
+ .Board{
+     display: inline-flex;
+}
+ .Routes{
+     display: inline-flex;
+}
+.musicButton{
+  float: right;
+}
+ .keyboard{
+     margin: 10vh 5vw;
+     text-align: center;
+     width:830px;
+     height: 295px;
+     background-color: #111;
+     border-radius: 9px;
+     padding: 15px;
+     padding-top: 25px;
+     padding-bottom: 20px;
+     color: #eee;
+}
+ .logo{
+     width:50px;
+     height:50px;
+     background-color:red;
+     font-weight:300;
+     font-style: oblique;
+     font-size:15px;
+     line-height:40px;
+     text-align:center;
+     margin: -20px auto 10px auto;
+     border-radius:40px;
+     font-family: 'Orbitron', sans-serif;
+     transition: box-shadow 0.7s ease;
+}
+ .lights{
+     float:right;
+     position:relative;
+     top:-45px;
+     right:8px;
+     padding:0;
+}
+ .lights span{
+    margin:0 20px 0 20px;
+     padding:0;
+     text-align: center;
+}
+ .lights span:after{
+     content:"";
+     width:11px;
+     height:8px;
+     top: 22px;
+     margin-left:-9px;
+     background-color:#DBB921;
+     position:absolute;
+     border-radius: 3px;
+}
+ .key{
+     border-style: solid;
+     border-width: 1px;
+     width: 40px;
+     height:40px;
+     display:block;
+     background-color:#000000;
+     text-align: left;
+     padding-left: 8px;
+     line-height: 29px;
+     border-radius:2px;
+     float:left;
+     margin-left: 2px;
+     margin-bottom:2px;
+     transition: box-shadow 0.7s ease;
+     text-align: center;
+}
+ .used{
+     background-color: red;
+     cursor: pointer;
+     font-family: 'Orbitron', sans-serif;
+     text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+}
+ body{
+     overflow: hidden;
+     height:100vh;
+     background-image: linear-gradient(to left bottom, #ff0000, #ff517f, #ff97d2, #f8d1fc, #ffffff);
+}
+ .section-a{
+    width:650px;
+     height:260px;
+     float:left;
+}
+ .section-b{
+    width:150px;
+     height:260px;
+     float:left;
+    margin-left: 30px;
+}
+ .function{
+    font-size: 12px;
+     width:30px;
+     height:30px;
+     margin-bottom:15px;
+}
+ .small{
+    font-size:10px;
+     line-height:13px;
+     text-align: center;
+     padding:0 5px;
+     padding-top:2px;
+     height:28px !important;
+}
+ .space1{
+    margin-right: 43px !important;
+}
+ .space2{
+    margin-right: 25px !important;
+}
+ .dual {
+    font-size: 14px;
+     line-height: 20px;
+     width:30px;
+}
+ .backspace {
+    width:84px;
+     font-size: 12px;
+}
+ .tab {
+    width: 50px;
+     line-height: 40px;
+     font-size:13px;
+}
+ .letter{
+    width:30px;
+}
+ .slash{
+    width:64px;
+}
+ .caps{
+    width:70px;
+     font-size:12px;
+     line-height:18px;
+}
+ .enter{
+    width:94px;
+     line-height:40px;
+     text-align: center;
+     padding-left:0;
+}
+ .shift.left{
+    width: 90px;
+    line-height: 40px;
+     font-size:13px;
+}
+ .shift.right{
+    width: 108px;
+    line-height: 40px;
+     font-size:13px;
+}
+ .ctrl{
+    width: 50px;
+     line-height: 40px;
+     font-size:13px;
+}
+ .space{
+    width:246px;
+}
+ .arrows{
+    position:relative;
+     top:42px;
+}
+ .sec-func .key{
+    width: 32px;
+     font-size:10px;
+     text-align:left;
+     line-height:40px;
+     float:left;
+}
+ .sec-func div.dual{
+    line-height:20px;
+}
+ .arrows .key{
+    text-align: center;
+     padding-left: 7px;
+     margin-left:2px;
+}
+ .hidden{
+    visibility: hidden;
+}
+ .used:hover{
+    box-shadow:0px 0px 50px #FF0000;
+     z-index:1000;
+}
+ .logo:hover{
+    box-shadow:0px 0px 50px #FF0000;
+     z-index:1000;
+}
+ .Intro{
+     text-shadow:2px 2px 1px rgba(255, 255, 255, 1),2px 2px 5px rgba(255, 255, 255, 1);
+     text-align: center;
+     font-family: 'Orbitron', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.myButton {
+	-moz-box-shadow:inset 5px 2px 2px 3px #ffffff;
+	-webkit-box-shadow:inset 5px 2px 2px 3px #ffffff;
+	box-shadow:inset 5px 2px 2px 3px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+	background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+	background-color:#f9f9f9;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	border:4px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+  font-family: 'Orbitron', sans-serif;
+margin: 20px 20px;
+letter-spacing: 2px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+	background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+	background-color:#e9e9e9;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.myButton:active {
+	position:relative;
+	top:1px;
 }
