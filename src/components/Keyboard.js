@@ -1,11 +1,21 @@
 import React from "react";
+import { withRouter, Route, Switch } from "react-router-dom";
 
 class Keyboard extends React.Component {
+  home = () =>{
+    this.props.history.replace('/')
+    this.props.setRevealTrue()
+  }
+
+  CClick = () =>{
+    this.props.history.replace('/Tyler')
+    this.props.setRevealFalse()
+  }
   render() {
     return (
       <React.Fragment>
         <div className="keyboard">
-          <div className="logo">TSH</div>
+          <div className="logo" onClick={(e)=>{this.home(e)}}>TSH</div>
 
           <div className="section-a">
             <div className="key function space1" />
@@ -71,7 +81,7 @@ class Keyboard extends React.Component {
 
             <div className="key letter" />
             <div className="key letter" />
-            <div className="key letter" />
+            <div className="key letter used" >E</div>
             <div className="key letter" />
             <div className="key letter" />
             <div className="key letter" />
@@ -111,7 +121,7 @@ class Keyboard extends React.Component {
             <div className="key shift left" />
             <div className="key letter" />
             <div className="key letter" />
-            <div className="key letter used" onClick={()=>this.props.changeReveal()}>C</div>
+            <div className="key letter used" onClick={()=>this.CClick()}>C</div>
             <div className="key letter" />
             <div className="key letter used">B</div>
             <div className="key letter" />
@@ -165,4 +175,4 @@ class Keyboard extends React.Component {
   }
 }
 
-export default Keyboard;
+export default withRouter(Keyboard);

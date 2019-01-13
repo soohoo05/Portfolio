@@ -12,7 +12,7 @@
   float: right;
 }
  .keyboard{
-     margin: 10vh 5vw;
+     margin: 5vh 5vw;
      text-align: center;
      width:830px;
      height: 295px;
@@ -244,4 +244,21 @@ letter-spacing: 2px;
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+
+.Welcome{
+  margin: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 20px;
+  border-style: double;
+  border-width: thick;
+  letter-spacing: 2px;
+}
+
+.welcomeKeys{
+  color: red;
 }
