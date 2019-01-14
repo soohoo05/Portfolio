@@ -9,7 +9,7 @@ class Intro extends React.Component {
       <span className="welcomeKeys"> (B)</span>logs,
       <span className="welcomeKeys"> (C)</span>ontact information and
       <span className="welcomeKeys"> (P)</span>rojects. Feel free to drop your Email in the
-      <span className="welcomeKeys"> (E)</span>mail page as well!</h1>
+      <span className="welcomeKeys"> (E)</span>mail page as well if you would like me to reach out to you! Click on the logo on the top of the keyboard to go back to the home page.</h1>
       </Bounce>
     </div>
   }

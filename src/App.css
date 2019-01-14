@@ -4,9 +4,12 @@
 }
  .Board{
      display: inline-flex;
+
 }
  .Routes{
      display: inline-flex;
+
+
 }
 .musicButton{
   float: right;
@@ -22,6 +25,8 @@
      padding-top: 25px;
      padding-bottom: 20px;
      color: #eee;
+     border-style: double;
+     border-width: 2px;
 }
  .logo{
      width:50px;
@@ -85,8 +90,10 @@
  body{
      overflow: hidden;
      height:100vh;
-     background-image: linear-gradient(to left bottom, #ff0000, #ff517f, #ff97d2, #f8d1fc, #ffffff);
-}
+     background: rgb(163,42,44);
+   background: linear-gradient(38deg, rgba(163,42,44,1) 0%, rgba(0,0,0,1) 100%);
+ }
+
  .section-a{
     width:650px;
      height:260px;
@@ -256,9 +263,124 @@ letter-spacing: 2px;
   border-radius: 20px;
   border-style: double;
   border-width: thick;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 .welcomeKeys{
   color: red;
 }
+.wholeForm{
+  text-align: center;
+}
+.form-container {
+   border: 5px solid #ffffff;
+   background: #c23434;
+   background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#c23434));
+   background: -webkit-linear-gradient(top, #000000, #c23434);
+   background: -moz-linear-gradient(top, #000000, #c23434);
+   background: -ms-linear-gradient(top, #000000, #c23434);
+   background: -o-linear-gradient(top, #000000, #c23434);
+   background-image: -ms-linear-gradient(top, #000000 0%, #c23434 100%);
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   border-radius: 30px;
+   -webkit-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
+   font-family: 'Orbitron', sans-serif;
+   text-align: center;
+   text-decoration: none;
+   min-width:300px;
+   padding:20px;
+   margin: auto;
+   }
+.form-field {
+   border: 3px solid #000000;
+   background: #ffffff;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+   color: #000000;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   padding:8px;
+   margin-bottom:20px;
+   width:280px;
+   font-family: 'Orbitron', sans-serif;
+
+   }
+.form-field:focus {
+   background: #ffffff;
+   color: #000000;
+   }
+.form-container h2 {
+   font-size:18px;
+   margin: 0 0 10px 0;
+   font-weight:bold;
+   text-align:center;
+   border-radius: 20px;
+   padding: 10px;
+   letter-spacing: 2px;
+    }
+.form-title {
+   margin-bottom:10px;
+   color: #ffffff;
+   text-shadow: #fdf2e4 0 1px 0;
+   }
+.submit-container {
+   margin:8px 0;
+   text-align:right;
+   }
+.submit-button {
+   border: 0px solid #ffffff;
+   background: #000000;
+   background: -webkit-gradient(linear, left top, left bottom, from(#8dc059), to(#000000));
+   background: -webkit-linear-gradient(top, #c23434, #000000);
+   background: -moz-linear-gradient(top, #8dc059, #000000);
+   background: -ms-linear-gradient(top, #8dc059, #000000);
+   background: -o-linear-gradient(top, #8dc059, #000000);
+   background-image: -ms-linear-gradient(top, #8dc059 0%, #000000 100%);
+   -webkit-border-radius: 30px;
+   -moz-border-radius: 30px;
+   border-radius: 30px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #000000 0 1px 0;
+   color: #FFFFFF;
+   font-family: 'Orbitron', sans-serif;
+
+   padding: 8.5px 18px;
+   font-size: 14px;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.submit-button:hover {
+   border: 0px solid #447314;
+   text-shadow: #31540c 0 1px 0;
+   background: #000000;
+
+   color: #fff;
+   }
+.error{
+  color: #ffffff;
+  letter-spacing: 2px;
+  -webkit-animation: flash linear 1s infinite;
+	animation: flash linear 1s infinite;
+}
+@-webkit-keyframes flash {
+	0% { opacity: 1; }
+	50% { opacity: .1; }
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; }
+	50% { opacity: .1; }
+	100% { opacity: 1; }
+
+}
+   .center{
+     margin-left: 100%;
+     margin-right: 100%;
+   }

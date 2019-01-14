@@ -1,6 +1,15 @@
 import React from 'react';
 
 class Tyler extends React.Component {
+  state={
+    views:""
+  }
+  componentDidMount(){
+    fetch('http://localhost:3000/views/1')
+    .then(res => res.json())
+    .then(json =>{this.setState({views:json.views})
+    })
+  }
   removeViews = () => {
     console.log("hello")
     fetch('http://localhost:3000/views/1')
@@ -14,10 +23,13 @@ class Tyler extends React.Component {
 })
   }
   render() {
-    return <button onClick={e=>this.removeViews()}>Remove View</button>
+    return (
+    <React.Fragment>
+      <h1>Views: {this.state.views}</h1>
+    <button onClick={e=>this.removeViews()}>Remove View</button>
+    </React.Fragment>
+  )
   }
 }
-Tyler.propTypes = {
 
-};
 export default Tyler;

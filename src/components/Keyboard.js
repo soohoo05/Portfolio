@@ -1,15 +1,34 @@
 import React from "react";
-import { withRouter, Route, Switch } from "react-router-dom";
+import { withRouter} from "react-router-dom";
 
 class Keyboard extends React.Component {
   home = () =>{
     this.props.history.replace('/')
-    this.props.setRevealTrue()
+
   }
 
-  CClick = () =>{
-    this.props.history.replace('/Tyler')
-    this.props.setRevealFalse()
+  KClick = (e) =>{
+    switch(e.target.innerHTML){
+      case "E":
+      this.props.history.replace('/Email')
+      break;
+      case "P":
+      this.props.history.replace('/Projects')
+        break;
+      case "A":
+      this.props.history.replace('/About')
+        break;
+      case "B":
+      this.props.history.replace('/Blogs')
+        break;
+        case "C":
+        this.props.history.replace('/Contact')
+        break;
+        default:
+        console.log("Error")
+    }
+
+
   }
   render() {
     return (
@@ -81,14 +100,14 @@ class Keyboard extends React.Component {
 
             <div className="key letter" />
             <div className="key letter" />
-            <div className="key letter used" >E</div>
+            <div className="key letter used" onClick={(e)=>this.KClick(e)}>E</div>
             <div className="key letter" />
             <div className="key letter" />
             <div className="key letter" />
             <div className="key letter" />
             <div className="key letter" />
             <div className="key letter" />
-            <div className="key letter used">P</div>
+            <div className="key letter used" onClick={(e)=>this.KClick(e)}>P</div>
             <div className="key dual">
               <br />
             </div>
@@ -101,7 +120,7 @@ class Keyboard extends React.Component {
             <div className="key caps">
               <br />
             </div>
-            <div className="key letter used">A</div>
+            <div className="key letter used" onClick={(e)=>this.KClick(e)}>A</div>
             <div className="key letter" />
             <div className="key letter" />
             <div className="key letter" />
@@ -121,9 +140,9 @@ class Keyboard extends React.Component {
             <div className="key shift left" />
             <div className="key letter" />
             <div className="key letter" />
-            <div className="key letter used" onClick={()=>this.CClick()}>C</div>
+            <div className="key letter used" onClick={(e)=>this.KClick(e)}>C</div>
             <div className="key letter" />
-            <div className="key letter used">B</div>
+            <div className="key letter used" onClick={(e)=>this.KClick(e)}>B</div>
             <div className="key letter" />
             <div className="key letter" />
             <div className="key dual">
