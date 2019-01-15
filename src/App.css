@@ -4,12 +4,11 @@
 }
  .Board{
      display: inline-flex;
-
+     position: absolute;
 }
  .Routes{
      display: inline-flex;
-
-
+     float: right;
 }
 .musicButton{
   float: right;
@@ -27,6 +26,8 @@
      color: #eee;
      border-style: double;
      border-width: 2px;
+     box-shadow: rgba(000,000,000,0.9) 5px 5px 1px, inset rgba(255,255,255,0.4) 0 1px 0;
+
 }
  .logo{
      width:50px;
@@ -292,7 +293,15 @@ letter-spacing: 2px;
    text-decoration: none;
    min-width:300px;
    padding:20px;
-   margin: auto;
+   }
+   .proPic{
+     height:352px;
+     border-style: double;
+     border-color: white;
+     border-radius: 30px;
+     margin-top: -5vh;
+     box-shadow: rgba(000,000,000,0.9) 10px 10px 15px, inset rgba(255,255,255,0.4) 0 1px 0;
+
    }
 .form-field {
    border: 3px solid #000000;
@@ -381,6 +390,21 @@ letter-spacing: 2px;
 
 }
    .center{
-     margin-left: 100%;
-     margin-right: 100%;
+     margin: 10vh -40vw;
    }
+
+.Links{
+  background-color: black;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: white;
+}
+.logos{
+  margin: 5px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  padding: 1px;
+}

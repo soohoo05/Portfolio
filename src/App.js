@@ -64,6 +64,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <Route exact path="/Tyler" component={Tyler} />
               <Route exact path="/Email" component={Email} />
+
             </Switch>
           </center>
         </div>
