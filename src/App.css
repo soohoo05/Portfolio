@@ -175,6 +175,12 @@
  .space{
     width:246px;
 }
+.activeSpace{
+  width:246px;
+  color:red;
+  font-family: 'Orbitron', sans-serif;
+
+}
  .arrows{
     position:relative;
      top:42px;
@@ -209,9 +215,12 @@
      text-shadow:2px 2px 1px rgba(255, 255, 255, 1),2px 2px 5px rgba(255, 255, 255, 1);
      text-align: center;
      font-family: 'Orbitron', sans-serif;
+
+
 }
 
 .myButton {
+
 	-moz-box-shadow:inset 5px 2px 2px 3px #ffffff;
 	-webkit-box-shadow:inset 5px 2px 2px 3px #ffffff;
 	box-shadow:inset 5px 2px 2px 3px #ffffff;
@@ -407,4 +416,50 @@ letter-spacing: 2px;
   border-color: white;
   border-width: 1px;
   padding: 1px;
+}
+
+.Projects{
+  background-color: white;
+  padding-left:100px;
+  padding-right: 100px;
+  overflow: scroll;
+  height:40vh;
+  overflow-x: hidden;
+  text-align: center;
+  border-radius: 10px;
+  border-style:solid;
+  box-shadow: rgba(000,000,000,0.9) 5px 5px 5px, inset rgba(255,255,255,0.4) 0 1px 0;
+  opacity:0.8;
+}
+.projectHeader{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: lightgrey;
+  margin: -5vh;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  box-shadow: rgba(000,000,000,0.9) 5px 5px 5px, inset rgba(255,255,255,0.4) 0 1px 0;
+  opacity:0.8;
+  color:red;
+  text-shadow: #000000 3px 3px 5px;
+  letter-spacing: 2px;
+}
+.githubicon{
+  height:100px;
+  width:100px;
+}
+.indProject{
+  box-shadow: rgba(000,000,000,0.9) 5px 5px 5px, inset rgba(255,255,255,0.4) 0 1px 0;
+  border-style:double;
+  border-width: 5px;
+  width: 20vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-shadow: #000000 3px 3px 5px;
+  
+}
+h1{
+  font-family: 'Orbitron', sans-serif;
+
 }

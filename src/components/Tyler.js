@@ -11,7 +11,6 @@ class Tyler extends React.Component {
     })
   }
   removeViews = () => {
-    console.log("hello")
     fetch('http://localhost:3000/views/1')
     .then(res => res.json())
     .then(json =>{

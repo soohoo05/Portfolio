@@ -2,6 +2,10 @@ import React from "react";
 import { withRouter} from "react-router-dom";
 
 class Keyboard extends React.Component {
+  state={
+    space:""
+  }
+
   home = () =>{
     this.props.history.replace('/')
 
@@ -30,11 +34,38 @@ class Keyboard extends React.Component {
 
 
   }
+  spaceChange = (e) => {
+
+    switch(e.target.innerHTML){
+      case "E":
+      this.setState({space:"Email"})
+      break;
+      case "P":
+      this.setState({space:"Projects"})
+        break;
+      case "A":
+      this.setState({space:"About Me"})
+        break;
+      case "B":
+      this.setState({space:"Blogs"})
+        break;
+        case "C":
+      this.setState({space:"Contact"})
+      case "TSH":
+      this.setState({space:"Home"})
+        break;
+        default:
+        console.log("Error")
+    }
+  }
+  spaceOut = () => {
+    this.setState({space:""})
+  }
   render() {
     return (
       <React.Fragment>
         <div className="keyboard">
-          <div className="logo" onClick={(e)=>{this.home(e)}}>TSH</div>
+          <div className="logo" onMouseOver={(e)=>this.spaceChange(e)} onMouseOut={()=>this.spaceOut()} onClick={(e)=>{this.home(e)}}>TSH</div>
 
           <div className="section-a">
             <div className="key function space1" />
@@ -100,14 +131,14 @@ class Keyboard extends React.Component {
 
             <div className="key letter" />
             <div className="key letter" />
-            <div className="key letter used" onClick={(e)=>this.KClick(e)}>E</div>
+            <div className="key letter used" onMouseOver={(e)=>this.spaceChange(e)} onMouseOut={()=>this.spaceOut()} onClick={(e)=>this.KClick(e)}>E</div>
             <div className="key letter" />
             <div className="key letter" />
             <div className="key letter" />
             <div className="key letter" />
             <div className="key letter" />
             <div className="key letter" />
-            <div className="key letter used" onClick={(e)=>this.KClick(e)}>P</div>
+            <div className="key letter used" onMouseOver={(e)=>this.spaceChange(e)} onMouseOut={()=>this.spaceOut()} onClick={(e)=>this.KClick(e)}>P</div>
             <div className="key dual">
               <br />
             </div>
@@ -120,7 +151,7 @@ class Keyboard extends React.Component {
             <div className="key caps">
               <br />
             </div>
-            <div className="key letter used" onClick={(e)=>this.KClick(e)}>A</div>
+            <div className="key letter used" onMouseOver={(e)=>this.spaceChange(e)} onMouseOut={()=>this.spaceOut()} onClick={(e)=>this.KClick(e)}>A</div>
             <div className="key letter" />
             <div className="key letter" />
             <div className="key letter" />
@@ -140,9 +171,9 @@ class Keyboard extends React.Component {
             <div className="key shift left" />
             <div className="key letter" />
             <div className="key letter" />
-            <div className="key letter used" onClick={(e)=>this.KClick(e)}>C</div>
+            <div className="key letter used" onMouseOver={(e)=>this.spaceChange(e)} onMouseOut={()=>this.spaceOut()} onClick={(e)=>this.KClick(e)}>C</div>
             <div className="key letter" />
-            <div className="key letter used" onClick={(e)=>this.KClick(e)}>B</div>
+            <div className="key letter used" onMouseOver={(e)=>this.spaceChange(e)} onMouseOut={()=>this.spaceOut()} onClick={(e)=>this.KClick(e)}>B</div>
             <div className="key letter" />
             <div className="key letter" />
             <div className="key dual">
@@ -158,7 +189,7 @@ class Keyboard extends React.Component {
             <div className="key ctrl" />
             <div className="key" />
             <div className="key" />
-            <div className="key space" />
+            {this.state.space.length !==0 ? <div className="key activeSpace" >{this.state.space}</div> :<div className="key space" >{this.state.space}</div>}
             <div className="key" />
             <div className="key" />
             <div className="key" />

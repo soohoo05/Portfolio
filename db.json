@@ -2,8 +2,30 @@
   "views": [
     {
       "id": 1,
-      "views": 164
+      "views": 207
     }
   ],
-  "emails": []
+  "emails": [],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Gotta Hack 'Em All",
+      "Link": "https://github.com/soohoo05/GottaHackEmAll-Back"
+    },
+    {
+      "id": 2,
+      "name": "Git-A-Job",
+      "Link": "https://github.com/soohoo05/Git-a-Job-Backend"
+    },
+    {
+      "id": 3,
+      "name": "Movie Guide",
+      "Link": "https://github.com/ScottWaring/module-one-final-project-guidelines-dumbo-web-091718"
+    },
+    {
+      "id": 4,
+      "name": "React Jobs",
+      "Link": "https://github.com/soohoo05/ReactJobs"
+    }
+  ]
 }
