@@ -427,9 +427,11 @@ letter-spacing: 2px;
   overflow-x: hidden;
   text-align: center;
   border-radius: 10px;
-  border-style:solid;
+  border-style:double;
   box-shadow: rgba(000,000,000,0.9) 5px 5px 5px, inset rgba(255,255,255,0.4) 0 1px 0;
   opacity:0.8;
+  border-width: 10px;
+
 }
 .projectHeader{
   padding-top: 20px;
@@ -457,7 +459,43 @@ letter-spacing: 2px;
   margin-top: 10px;
   margin-bottom: 10px;
   text-shadow: #000000 3px 3px 5px;
-  
+
+}
+.aboutHeader{
+  letter-spacing: 2px;
+  margin-top: -5vh;
+  background-color: lightgrey;
+  border-radius: 20px;
+  box-shadow: rgba(000,000,000,0.9) 5px 5px 5px, inset rgba(255,255,255,0.4) 0 1px 0;
+  color:red;
+  text-shadow: #000000 3px 3px 5px;
+  padding:20px;
+}
+.aboutParagraph{
+  line-height: 2;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+.aboutDiv{
+  text-align: left;
+  border-width: 10px;
+  margin-top:0vh;
+  box-shadow: rgba(000,000,000,0.9) 5px 5px 5px, inset rgba(255,255,255,0.4) 0 1px 0;
+  padding:20px;
+  border-radius: 20px;
+  border-style: double;
+  font-family: 'Orbitron', sans-serif;
+  background-color: white;
+  height:30vh;
+  overflow: scroll;
+  width: 30vw;
+  overflow-x: hidden;
+}
+.contactHeader{
+  color: #FFFFFF;
+  text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
 }
 h1{
   font-family: 'Orbitron', sans-serif;

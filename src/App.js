@@ -8,7 +8,9 @@ import Rotate from "react-reveal/Rotate";
 import Tyler from "./components/Tyler";
 import Intro from "./components/Intro";
 import Email from "./components/Email";
-import Projects from "./routes/Projects"
+import Projects from "./routes/Projects";
+import About from "./routes/About";
+import Contact from "./routes/Contact"
 class App extends Component {
   state = {
     music: true
@@ -66,6 +68,8 @@ class App extends Component {
               <Route exact path="/Tyler" component={Tyler} />
               <Route exact path="/Email" component={Email} />
               <Route exact path="/Projects" component={Projects}/>
+              <Route exact path="/About" component={About}/>
+              <Route exact path="/Contact" component={Contact}/>
             </Switch>
           </center>
         </div>

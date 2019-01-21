@@ -51,6 +51,7 @@ class Keyboard extends React.Component {
         break;
         case "C":
       this.setState({space:"Contact"})
+      break;
       case "TSH":
       this.setState({space:"Home"})
         break;
