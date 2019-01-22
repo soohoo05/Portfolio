@@ -418,7 +418,7 @@ letter-spacing: 2px;
   padding: 1px;
 }
 
-.Projects{
+.BlogsProjects{
   background-color: white;
   padding-left:100px;
   padding-right: 100px;
@@ -433,7 +433,7 @@ letter-spacing: 2px;
   border-width: 10px;
 
 }
-.projectHeader{
+.blogprojectHeader{
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;

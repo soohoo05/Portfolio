@@ -2,7 +2,7 @@
   "views": [
     {
       "id": 1,
-      "views": 231
+      "views": 260
     }
   ],
   "emails": [],
@@ -26,6 +26,33 @@
       "id": 4,
       "name": "React Jobs",
       "Link": "https://github.com/soohoo05/ReactJobs"
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Reveal-ing the react animation library savior for css newbies",
+      "link": "https://medium.com/@tyler.soohoo/reveal-ing-the-react-animation-library-savior-for-css-newbies-4fe796b7c87f"
+    },
+    {
+      "id": 2,
+      "title": "Would i recommend a coding boot camp over a cs degree?",
+      "link": "https://medium.com/@tyler.soohoo/would-i-recommend-a-coding-boot-camp-over-a-cs-degree-9e228f17429d"
+    },
+    {
+      "id": 3,
+      "title": "Installing oracle vm virtualbox so you can run mac os on your windows computer",
+      "link": "https://medium.com/@tyler.soohoo/installing-oracle-vm-virtualbox-so-you-can-run-mac-os-on-your-windows-computer-3819d2d9f5c8"
+    },
+    {
+      "id": 4,
+      "title": "A project gone south",
+      "link": "https://medium.com/@tyler.soohoo/a-project-gone-south-e2109dd08be9"
+    },
+    {
+      "id": 5,
+      "title": "Acing the technical interview part 1: OOP concept of inheritance",
+      "link": "https://medium.com/@tyler.soohoo/acing-the-technical-interview-part-1-oop-concept-of-inheritance-82532fa16ea3"
     }
   ]
 }

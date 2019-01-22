@@ -13,8 +13,8 @@ class ProjectContainer extends React.Component {
   render() {
     let mapped=this.state.projects.map(project => <Project theProject={project} key={project.id}/>)
     return(<React.Fragment>
-      <h1 className="projectHeader">Projects</h1>
-      <div className="Projects">{mapped}</div>
+      <h1 className="blogprojectHeader">Projects</h1>
+      <div className="BlogsProjects">{mapped}</div>
       </React.Fragment>
     )
   }
