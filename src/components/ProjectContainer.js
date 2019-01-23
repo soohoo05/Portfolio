@@ -7,7 +7,7 @@ class ProjectContainer extends React.Component {
     projects:[]
   }
   componentDidMount(){
-    axios.get('http://localhost:3000/projects')
+    axios.get('https://tshpdb.herokuapp.com/projects')
     .then(res => this.setState({projects:res.data}))
   }
   render() {

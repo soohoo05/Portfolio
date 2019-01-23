@@ -12,7 +12,7 @@ class Email extends React.Component {
   submitHandler = e => {
     e.preventDefault();
     if (this.validateEmail(this.state.email)) {
-      axios.post("http://localhost:3000/emails", {
+      axios.post("https://tshpdb.herokuapp.com/emails", {
         email: this.state.email
       });
       this.setState({ email: "", error: "Email Submitted!" });

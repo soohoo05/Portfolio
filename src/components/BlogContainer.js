@@ -6,7 +6,7 @@ class BlogContainer extends React.Component {
     blogs:[]
   }
   componentDidMount(){
-    axios.get('http://localhost:3000/blogs')
+    axios.get('https://tshpdb.herokuapp.com/blogs')
     .then(res => this.setState({blogs:res.data}))
   }
   render() {

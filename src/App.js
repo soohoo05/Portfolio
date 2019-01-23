@@ -19,10 +19,10 @@ class App extends Component {
 
 
   componentDidMount() {
-    fetch("http://localhost:3000/views/1")
+    fetch("https://tshpdb.herokuapp.com/views/1")
       .then(res => res.json())
       .then(json => {
-        fetch(`http://localhost:3000/views/1`, {
+        fetch(`https://tshpdb.herokuapp.com/views/1`, {
           method: "PATCH",
           headers: { "Content-type": "application/json" },
           body: JSON.stringify({ views: json.views + 1 })

@@ -2,7 +2,7 @@
   "views": [
     {
       "id": 1,
-      "views": 260
+      "views": 269
     }
   ],
   "emails": [],
@@ -10,22 +10,26 @@
     {
       "id": 1,
       "name": "Gotta Hack 'Em All",
-      "Link": "https://github.com/soohoo05/GottaHackEmAll-Back"
+      "Link": "https://github.com/soohoo05/GottaHackEmAll-Back",
+      "Video": ""
     },
     {
       "id": 2,
       "name": "Git-A-Job",
-      "Link": "https://github.com/soohoo05/Git-a-Job-Backend"
+      "Link": "https://github.com/soohoo05/Git-a-Job-Backend",
+      "Video": ""
     },
     {
       "id": 3,
       "name": "Movie Guide",
-      "Link": "https://github.com/ScottWaring/module-one-final-project-guidelines-dumbo-web-091718"
+      "Link": "https://github.com/ScottWaring/module-one-final-project-guidelines-dumbo-web-091718",
+      "Video": ""
     },
     {
       "id": 4,
       "name": "React Jobs",
-      "Link": "https://github.com/soohoo05/ReactJobs"
+      "Link": "https://github.com/soohoo05/ReactJobs",
+      "Video": "https://youtu.be/oVOgIeBE2-g"
     }
   ],
   "blogs": [

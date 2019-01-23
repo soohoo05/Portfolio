@@ -2,19 +2,24 @@ import React from 'react';
 
 class Tyler extends React.Component {
   state={
-    views:""
+    views:"",
+    emails:[]
   }
   componentDidMount(){
-    fetch('http://localhost:3000/views/1')
+    fetch('https://tshpdb.herokuapp.com/views/1')
     .then(res => res.json())
     .then(json =>{this.setState({views:json.views})
     })
-  }
+
+  fetch('https://tshpdb.herokuapp.com/emails')
+  .then(res=>res.json())
+  .then(json=>{console.log(json)})
+}
   removeViews = () => {
-    fetch('http://localhost:3000/views/1')
+    fetch('https://tshpdb.herokuapp.com/views/1')
     .then(res => res.json())
     .then(json =>{
-    fetch(`http://localhost:3000/views/1`,{
+    fetch(`https://tshpdb.herokuapp.com/views/1`,{
       method: "PATCH",
       headers: {"Content-type" : "application/json"},
       body: JSON.stringify({views:json.views-2})
@@ -22,6 +27,7 @@ class Tyler extends React.Component {
 })
   }
   render() {
+    console.log(this.state.emails)
     return (
     <React.Fragment>
       <h1>Views: {this.state.views}</h1>
