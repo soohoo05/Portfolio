@@ -89,7 +89,6 @@
      text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
 }
  body{
-     overflow: hidden;
      height:100vh;
      background: rgb(163,42,44);
    background: linear-gradient(38deg, rgba(163,42,44,1) 0%, rgba(0,0,0,1) 100%);
@@ -429,7 +428,6 @@ letter-spacing: 2px;
   border-radius: 10px;
   border-style:double;
   box-shadow: rgba(000,000,000,0.9) 5px 5px 5px, inset rgba(255,255,255,0.4) 0 1px 0;
-  opacity:0.8;
   border-width: 10px;
 
 }
@@ -442,7 +440,6 @@ letter-spacing: 2px;
   margin-bottom: 5px;
   border-radius: 20px;
   box-shadow: rgba(000,000,000,0.9) 5px 5px 5px, inset rgba(255,255,255,0.4) 0 1px 0;
-  opacity:0.8;
   color:red;
   text-shadow: #000000 3px 3px 5px;
   letter-spacing: 2px;

@@ -6,7 +6,8 @@ class Contact extends React.Component {
     return (
       <Fade right duration={3000}>
         <div className="Links">
-          <h1 className="contactHeader">Email: Tyler.soohoo@gmail.com</h1>
+          <h1 className="contactHeader">Email: </h1>
+          <h1 className="contactHeader">tyler.soohoo@gmail.com</h1>
           <img
             className="logos"
             onClick={() =>
